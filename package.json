@@ -1,0 +1,19 @@
+{
+  "name": "@roger-king/super-cra-template",
+  "version": "1.0.0",
+  "description": "Create React App (CRA) template that implements best practices with react and typescript.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react",
+    "create-react-app",
+    "template",
+    "cra",
+    "typescript",
+    "dev-tools"
+  ],
+  "author": "Roger King <rogr.king@gmail.com>",
+  "license": "ISC"
+}
