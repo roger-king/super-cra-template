@@ -318,3 +318,4 @@ bower_components/
 .env
 .env.development
 .env.staging
+example
