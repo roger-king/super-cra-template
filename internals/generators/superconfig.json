@@ -1,0 +1,6 @@
+{
+    "styled": {
+        "name": "emotion",
+        "import": "@emotion/styled"
+    }
+}

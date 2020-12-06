@@ -319,3 +319,4 @@ bower_components/
 .env.development
 .env.staging
 example
+src

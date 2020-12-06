@@ -1,3 +1,4 @@
+import React from "react";
 import { Home } from "./Home";
 
 interface Route {
@@ -13,4 +14,5 @@ export const routes: Route[] = [
     component: Home,
     lazy: true,
   },
+  // DO NOT DELETE - page_import here
 ];

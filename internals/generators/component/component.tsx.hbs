@@ -1,0 +1,14 @@
+import React from 'react';
+import styled from '{{ StyledLibraryImport }}';
+
+const Div = styled.div``;
+
+export interface {{ pascalCase ComponentName }}Props {
+
+}
+
+export const {{ pascalCase ComponentName }}: React.FC<{{ pascalCase ComponentName }}Props> = (props: {{ pascalCase ComponentName }}Props) => {
+    return (
+        <Div>{{ ComponentName }}</Div>
+    )
+}

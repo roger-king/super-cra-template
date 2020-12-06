@@ -1,0 +1,12 @@
+import React from 'react';
+import styled from '{{ StyledLibraryImport }}';
+
+const Div = styled.div``;
+
+export interface {{ pascalCase PageName }}Props {}
+
+export const {{ pascalCase PageName }}: React.FC<{{ pascalCase ContainerName }}Props> = (props: {{ pascalCase ContainerName }}Props) => {
+    return (
+        <Div>{{ ContainerName }}</Div>
+    )
+}
