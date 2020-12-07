@@ -22,6 +22,7 @@
     "cross-env": "^7.0.3",
     "node-plop": "^0.26.2",
     "plop": "^2.7.4",
+    "prettier": "^2.2.1",
     "rimraf": "^3.0.2",
     "shelljs": "^0.8.4"
   },
