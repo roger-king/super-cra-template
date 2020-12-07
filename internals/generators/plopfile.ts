@@ -1,5 +1,6 @@
 import { NodePlopAPI } from "node-plop";
 import { componentGenerator } from "./component";
+import { containerGenerator } from "./container";
 import { pageGenerator } from "./page";
 import { initGenerator } from "./init";
 import shell from "shelljs";
@@ -18,6 +19,7 @@ export const BACKUPFILE_EXTENSION = "rbgen";
 export default function plop(plop: NodePlopAPI) {
   if (superConfigExists()) {
     plop.setGenerator("component", componentGenerator);
+    plop.setGenerator("container", containerGenerator);
     plop.setGenerator("page", pageGenerator);
   } else {
     plop.setGenerator("init", initGenerator);

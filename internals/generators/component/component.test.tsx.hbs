@@ -5,7 +5,7 @@ import { {{ properCase ComponentName }} } from '../{{ properCase ComponentName }
 
 describe('<{{ properCase ComponentName }}  />', () => {
   it('should match snapshot', () => {
-    const loadingIndicator = render(<{{ properCase ComponentName }} />);
-    expect(loadingIndicator.container.firstChild).toMatchSnapshot();
+    const component = render(<{{ properCase ComponentName }} />);
+    expect(component.container.firstChild).toMatchSnapshot();
   });
 });

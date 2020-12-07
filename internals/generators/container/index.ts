@@ -33,27 +33,26 @@ export const containerGenerator: PlopGeneratorConfig = {
     },
   ],
   actions: (data: { [P in ContainerPromptNames]: string }) => {
-    const componentPath = `${path.join(
+    const containerPath = `${path.join(
       __dirname,
-      "../../../",
-      data.ContainerPath
+      "../../../src/app/containers"
     )}/{{properCase ${ContainerPromptNames.ContainerName}}}`;
 
-    const properCaseComponentName = toTitleCase(data.ContainerName);
+    const properCaseContainerName = toTitleCase(data.ContainerName);
     const superConfig = readSuperConfig();
 
     data.StyledLibraryImport = superConfig.styled.import;
     const actions: Actions = [
       {
         type: "add",
-        path: `${componentPath}/index.tsx`,
-        templateFile: "./component/index.tsx.hbs",
+        path: `${containerPath}/index.tsx`,
+        templateFile: "./container/index.tsx.hbs",
         abortOnFail: true,
       },
       {
         type: "add",
-        path: `${componentPath}/${properCaseComponentName}.tsx`,
-        templateFile: "./component/component.tsx.hbs",
+        path: `${containerPath}/${properCaseContainerName}.tsx`,
+        templateFile: "./container/container.tsx.hbs",
         abortOnFail: true,
       },
       // {
