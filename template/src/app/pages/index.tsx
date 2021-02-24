@@ -1,4 +1,6 @@
 import React from "react";
+
+// DO NOT DELETE - page_component_import
 import { Home } from "./Home";
 
 interface Route {

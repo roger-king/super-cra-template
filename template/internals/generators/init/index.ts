@@ -5,7 +5,6 @@
 import { Actions, PlopGeneratorConfig } from "node-plop";
 import { superConfigExists } from "../utils";
 import path from "path";
-import { rm } from "fs";
 import rimraf from "rimraf";
 
 export enum ConfigPromptNames {

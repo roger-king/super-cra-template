@@ -1,4 +1,4 @@
-import styled from "@emotion/styled";
+import styled from "styled-components";
 
 export const Jumbotron = styled.div`
   height: 80%;

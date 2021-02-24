@@ -66,7 +66,7 @@ export const pageGenerator: PlopGeneratorConfig = {
     data.StyledLibraryImport = superConfig.styled.import;
     data.PageRoute = {
       path: data.PageUrl,
-      component: `${toTitleCase(PagePromptNames.PageName)}`,
+      component: toTitleCase(data.PageName),
       lazy: data.LazyLoad,
       protected: data.PageProtected,
     };
@@ -88,12 +88,14 @@ export const pageGenerator: PlopGeneratorConfig = {
         type: "modify",
         path: `${rootPagePath}/index.tsx`,
         transform(fileContents, data) {
-          return fileContents.replace(
+          let pageRoute = fileContents.replace(
             /\/\/ DO NOT DELETE - page_import here/g,
             `\/\/ DO NOT DELETE - page_import here\n${JSON.stringify(
               data.PageRoute
             )}`
           );
+
+          return pageRoute.replace();
         },
       },
       // {
